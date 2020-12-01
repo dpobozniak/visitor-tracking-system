@@ -1,0 +1,24 @@
+@import "~normalize.css/normalize.css";
+
+:root {
+  --max-page-width: 1300px;
+}
+
+body {
+  background: #fff;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+  max-width: var(--max-page-width);
+  width: calc(100% - 2em);
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}

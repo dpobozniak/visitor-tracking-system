@@ -1,0 +1,12 @@
+.message {
+  --color-success: hsl(90, 62%, 38%);
+  --color-error: hsl(0, 62%, 38%);
+
+  &__success {
+    color: var(--color-success);
+  }
+
+  &__error {
+    color: var(--color-error);
+  }
+}

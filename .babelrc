@@ -1,0 +1,40 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "chrome 74"
+          ]
+        },
+        "modules": false,
+        "loose": true,
+        "debug": false
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "10"
+            }
+          }
+        ],
+        "@babel/preset-react"
+      ],
+      "plugins": [
+        ["@babel/plugin-proposal-class-properties", { "spec": true }]
+      ]
+    }
+  },
+  "plugins": [
+    ["syntax-dynamic-import"],
+    ["@babel/plugin-proposal-class-properties"]
+  ]
+}
